@@ -7,3 +7,5 @@ Install jest as a dependency<br>
 ```npm i -D jest```<br>
 Run tests <br>
 ```npm test```<br>
+Install Axios<br>
+```npm i axios```
