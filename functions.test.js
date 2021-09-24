@@ -60,3 +60,9 @@ test('Should be under 1600', () => {
     expect(load1 + load2).toBeLessThanOrEqual(1600);
 });
 
+/**
+ * Guarantees that the input string does not have an I
+ */
+test('There is no I in team', () => {
+    expect('team').not.toMatch(/I/);
+});
