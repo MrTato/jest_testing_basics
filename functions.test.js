@@ -23,6 +23,9 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 // toBeTruthy matches anything that an if statement treats as true
 // toBeFalsy matches anything that an if statement treats as false
 
+/**
+ * Guarantees the return value is null
+ */
 test('Should be null', () => {
     expect(functions.isNull()).toBeNull();
 });
@@ -32,4 +35,14 @@ test('Should be null', () => {
  */
 test('Should be falsy', () => {
     expect(functions.checkValue(null)).toBeFalsy();
+});
+
+/**
+ * Guarantees the object or array has the expected structure and values
+ */
+test('User should be Brad Traversy object', () => {
+    expect(functions.createUser()).toEqual({
+        firstName: 'Brad',
+        lastName: 'Traversy'
+    });
 });
