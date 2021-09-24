@@ -46,3 +46,17 @@ test('User should be Brad Traversy object', () => {
         lastName: 'Traversy'
     });
 });
+
+/**
+ * Verifies that the return value is less than or equal to the expected value
+ * You can also use:
+ * toBeLessThan()
+ * toBeGreaterThan()
+ * toBeGreaterThanOrEqual()
+ */
+test('Should be under 1600', () => {
+    const load1 = 800;
+    const load2 = 800;
+    expect(load1 + load2).toBeLessThanOrEqual(1600);
+});
+
