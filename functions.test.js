@@ -94,3 +94,9 @@ test('User fetched name should be Leanne Graham', () => {
     expect(data.name).toEqual('Leanne Graham');
 });
 
+/**
+ * Check if function exists
+ */
+test('Functions object exists', () => {
+    expect(functions).toBeDefined();
+});
