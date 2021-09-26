@@ -8,6 +8,6 @@ Install jest as a dependency<br>
 Run tests <br>
 ```npm test```<br>
 Install Axios<br>
-```npm i axios```
+```npm i axios```<br>
 Runs all the tests in watch mode<br>
 ```npm run testwatch```
