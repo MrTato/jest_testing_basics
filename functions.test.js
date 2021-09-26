@@ -1,5 +1,11 @@
 const functions = require('./functions');
 
+beforeEach(() => initDatabase());
+afterEach(() => closeDatabase());
+
+const initDatabase = () => console.log('Database Initialized...');
+const closeDatabase = () => console.log('Database closed...');
+
 /**
  * Guarantess the retun value is the expected value
  * Here, the function add should return 4 when passed in 2 + 2
