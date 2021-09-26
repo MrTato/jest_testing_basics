@@ -9,3 +9,5 @@ Run tests <br>
 ```npm test```<br>
 Install Axios<br>
 ```npm i axios```
+Runs all the tests in watch mode<br>
+```npm run testwatch```
