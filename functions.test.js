@@ -1,13 +1,38 @@
 const functions = require('./functions');
 
+/**
+ * Runs before and after each test
+ */
 beforeEach(() => initDatabase());
 afterEach(() => closeDatabase());
 
+/**
+ * Runs before and after all tests
+ */
 beforeAll(() => initDatabase());
 afterAll(() => closeDatabase);
 
 const initDatabase = () => console.log('Database Initialized...');
 const closeDatabase = () => console.log('Database closed...');
+
+const nameCheck = () => console.log('Checking Name....');
+
+/**
+ * Run tests inside a particular context
+ */
+describe('Checking Names', () => {
+    beforeEach(() => nameCheck());
+
+    test('User is Jeff', () => {
+        const user = 'Jeff';
+        expect(user).toBe('Jeff');
+    });
+
+    test('User is Karen', () => {
+        const user = 'Karen';
+        expect(user).toBe('Karen');
+    })
+});
 
 /**
  * Guarantess the retun value is the expected value
